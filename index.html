@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Cities</title>
+  </head>
+  <body>
+    <header><h1>Cities</h1></header>
+
+    <main>
+      <fieldset id="changeDeleteFieldset">
+        <h2>Ändra eller ta bort en stad</h2>
+        <p>
+          Välj en stad i menyn och ändra eller ta bort den. Vill du ändra en
+          stad väljer du den aktuella staden i menyn och fyller i fälten för
+          antingen stadsnamn eller befolkning eller både och. Klicka sen på
+          "Ändra". Vill du ta bort en stad väljer du endast en stad i menyn och
+          klickar på "Ta bort".
+        </p>
+        <select id="allCities" name="allCities"></select>
+        <label>
+          Nytt stadsnamn:
+          <input id="changeCity" name="changCity" placeholder="Namn på stad" />
+        </label>
+        <label>
+          Ny befolkningsmängd:
+          <input
+            id="changePopulation"
+            name="changePopulation"
+            placeholder="Befolkningsmängd"
+          />
+        </label>
+        <div id="errorChangeDelete"></div>
+        <div>
+          <input id="changeButton" type="button" value="Ändra" />
+          <input id="deleteButton" type="button" value="Ta bort" />
+        </div>
+      </fieldset>
+
+      <fieldset id="createCityFieldset">
+        <h2>Skapa en ny stad</h2>
+        <p>
+          Vill du skapa en ny stad fyller du i fälten för stadsnamn och
+          befolkning och klickar på "Skapa ny stad"
+        </p>
+        <label>
+          Stad:
+          <input id="newCity" name="newCity" placeholder="Namn på stad" />
+        </label>
+        <label>
+          Befolkning:
+          <input
+            id="newPopulation"
+            name="newPopulation"
+            placeholder="Befolkningsmängd"
+          />
+        </label>
+        <div id="errorCreateCity"></div>
+        <input id="newCityButton" type="button" value="Skapa ny stad" />
+      </fieldset>
+      <div id="viewCities"></div>
+    </main>
+
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>

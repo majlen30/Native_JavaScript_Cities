@@ -1,0 +1,111 @@
+/* ====================================================================================================================== */
+/* Typsnitt och färgvariabler ------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+@font-face {
+  font-family: Open-Sans;
+  src: url('OpenSans-VariableFont.ttf') format('truetype');
+}
+
+:root {
+  --background-color: #595a4a;
+  --background-color-dark: #434337;
+  --alternative-color: #decccc;
+  --alternative-color-dark: #b89e97;
+}
+
+/* ====================================================================================================================== */
+/* Allmän stilsättning -------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+body {
+  background-color: var(--background-color);
+  background-image: url('background.png');
+  font-family: Open-Sans, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+  max-width: 30vw;
+}
+
+ul {
+  color: red;
+  font-weight: bold;
+  margin: 1em 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* ====================================================================================================================== */
+/* Header --------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+header {
+  background-color: var(--alternative-color-dark);
+  box-shadow: 2px 2px 4px var(--background-color-dark);
+  padding: 0.5em 2em;
+}
+
+/* ====================================================================================================================== */
+/* Fieldset och inmatning ----------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+fieldset {
+  align-items: center;
+  background-color: var(--alternative-color);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px var(--background-color-dark);
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+  padding: 1em;
+  width: 40vw;
+}
+
+input {
+  margin: 0.25em;
+}
+
+#allCities {
+  margin: 1em;
+}
+
+#errorChangeDelete {
+  height: 50px;
+}
+
+#errorCreateCity {
+  flex-grow: 1;
+}
+
+/* ====================================================================================================================== */
+/* Alla städer ---------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------------------------- */
+section {
+  background-color: var(--alternative-color-dark);
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px var(--background-color-dark);
+  margin: 0.5em;
+  padding: 1em;
+  width: 15vw;
+}
+
+#viewCities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
